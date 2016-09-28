@@ -2,7 +2,7 @@ package dawson112.assignments;
 import java.util.Scanner;
 
 public class LoanCalculator {
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		
 		//Initializes the scanner
 		Scanner reader = new Scanner(System.in);
@@ -21,7 +21,8 @@ public class LoanCalculator {
 		double monthlyInterestRate = interestRate / 1200.0;
 		
 		//Calculates the amount of months needed to pay the loan
-		double amountOfMonths = (Math.log(monthlyAmount / (monthlyAmount - monthlyInterestRate * principle)) / Math.log(1 + monthlyInterestRate));
+		double amountOfMonths = (Math.log(monthlyAmount / (monthlyAmount - monthlyInterestRate * principle)) 
+																		/ Math.log(1 + monthlyInterestRate));
 		
 		//Rounds up the amount of months and calculates the number of years
 		double roundedAmountOfMonths = Math.ceil(amountOfMonths);
