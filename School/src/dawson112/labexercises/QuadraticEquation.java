@@ -39,5 +39,8 @@ public class QuadraticEquation {
 			//Print that there are no roots
 			System.out.println("Discriminant is negative, no real roots");
 		}
+		
+		//Closes the scanner
+		reader.close();
 	}
 }
