@@ -18,6 +18,8 @@ public class LoanCalculator2 {
 		double monthlyAmount = reader.nextDouble();
 		
 		System.out.println("Enter hourly salary");
+		//Setting this variable to a double instead of an int because some people get their
+		//paychecks with decimal hours (i.e. me)
 		double hourlySalary = reader.nextDouble();
 		
 		System.out.println("Enter number of hours worked per week");
