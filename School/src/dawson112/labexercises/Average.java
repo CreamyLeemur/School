@@ -1,5 +1,4 @@
 package dawson112.labexercises;
-
 import java.util.Scanner;
 
 public class Average
@@ -21,10 +20,7 @@ public class Average
 
  System.out.println("Enter the third number:");
  number3 = reader.nextInt();
-		 
 
-
- 
  //Process the data in order to determine the average of the numbers
  average = (number1 + number2 + number3) / 3.0;
 
