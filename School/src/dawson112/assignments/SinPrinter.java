@@ -54,7 +54,7 @@ public class SinPrinter {
 			int product;
 			
 			//Converts from char to int
-			int currentDigit = currentChar - '0';
+			int currentDigit = Character.getNumericValue(currentChar);
 			
 			//If the current digit's position is a multiple of 2, multiply it by 2.
 			//Else, just assign it's value to product as multiplying by 1 gives the same result.
@@ -66,7 +66,7 @@ public class SinPrinter {
 			}
 			
 			//If the product has 2 digits, we add them. This is a simpler way of doing
-			//so as the sum of the two is the product - 9.
+			//so as the sum of the two is the product -9.
 			if (product > 9) {
 				product -= 9;
 			}
