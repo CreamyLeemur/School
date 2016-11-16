@@ -38,7 +38,6 @@ public class SinPrinter {
 		//Prints the final result
 		System.out.println("\nThere are " + loopCount + " total valid social insurance numbers in the range you specified");		
 	}
-	
 	public static int sumDigits(int sinNumberInt) {
 		
 		//Converts the int to a string
@@ -50,11 +49,8 @@ public class SinPrinter {
 		for (int counter = 0; counter <= 8; counter++) {
 			
 			//Gets the current digit using string manipulation
-			char currentChar = sinNumberString.charAt(counter);
+			int currentDigit = Character.getNumericValue(sinNumberString.charAt(counter));
 			int product;
-			
-			//Converts from char to int
-			int currentDigit = Character.getNumericValue(currentChar);
 			
 			//If the current digit's position is a multiple of 2, multiply it by 2.
 			//Else, just assign it's value to product as multiplying by 1 gives the same result.
@@ -74,11 +70,8 @@ public class SinPrinter {
 			//Adds the current product to the sum
 			sum += product;
 		}
-		
 		return sum;
-		
 	}
-	
 	public static boolean isValidSin(int sum) {
 		
 		//If the sum of the checksum ends in a 0, it's valid
