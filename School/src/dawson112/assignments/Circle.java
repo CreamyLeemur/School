@@ -45,7 +45,7 @@ public class Circle {
 	
 	//Method to get the area of the circle
 	public double getArea() {
-		return Math.pow(radius, 2) * Math.PI;
+		return Math.pow(this.radius, 2) * Math.PI;
 	}
 	
 	//Method to get the circumference of the circle
